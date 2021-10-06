@@ -6,21 +6,21 @@ def ask():
 
     print("1.operand (integer)")
     text = input()
-    while not text.isnumeric():
+    while not secret_logic.is_numeric(text):
         print("bad input, try again")
         text = input()
     operand1 = int(text)
 
     print("operator (+ | - | * | /)")
     text = input()
-    while text not in ['+', '-', '*', '/']:
+    while not secret_logic.is_supported_operator(text):
         print("bad input, try again")
         text = input()
     l_operator = text
 
     print("2.operand (integer)")
     text = input()
-    while not text.isnumeric():
+    while not secret_logic.is_numeric(text):
         print("bad input, try again")
         text = input()
     operand2 = int(text)
