@@ -13,4 +13,4 @@ if operator == "+":
     result = operand1 + operand2
 
 print(f"result: {result}")
-
+exit(0)
