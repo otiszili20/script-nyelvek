@@ -11,9 +11,17 @@ def print_usage_and_exit():
 if len(sys.argv) != 4:
     print_usage_and_exit()
 
+if not secret_logic.is_numeric(sys.argv[1]):
+    print_usage_and_exit()
 op1 = int(sys.argv[1])
+
+if not secret_logic.is_supported_operator(sys.argv[2]):
+    print_usage_and_exit()
 operator = sys.argv[2]
-op2 = int(sys.argv[1])
+
+if not secret_logic.is_numeric(sys.argv[3]):
+    print_usage_and_exit()
+op2 = int(sys.argv[3])
 
 result = secret_logic.calculate(op1, operator, op2)
 print(f"result: {result}")
