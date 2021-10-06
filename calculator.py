@@ -8,3 +8,8 @@ operator = input()
 
 print("2.operand")
 operand2 = int(input())
+
+if operator == "+":
+    result = operand1 + operand2
+
+print(f"result: {result}")
