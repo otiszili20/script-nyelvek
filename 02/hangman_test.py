@@ -1,5 +1,4 @@
 import unittest
-from parameterized import parameterized
 from hangman import get_all_index
 
 
